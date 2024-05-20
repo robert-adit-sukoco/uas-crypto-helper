@@ -102,8 +102,13 @@ def main():
     P = (3, 8)
     Q = (4, 8)
 
+    # Perform P + Q in E_13(2, 5) where P = (3,8) and Q = (4, 8)
     addition_result = point_addition(P, Q, a, p)
     print(addition_result)
+
+    # Performs P + P in E_13(2, 5) where P = (3,8)
+    doubling_result = point_doubling(P, a, p)
+    print(doubling_result)
 
 if __name__ == "__main__":
     main()
